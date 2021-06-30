@@ -1,0 +1,50 @@
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+  <meta charset="UTF-8">
+ <title>Insert title here</title>
+  </head>
+  
+  <body>
+  
+
+   <input type = "text" value = "" id ="idd" value = "">
+  111 输入框内容为调用ue函数的返回值
+  <button onclick = "btn()" >调用UE函数 </button>
+  
+  
+  
+  <script>
+  var integerParam =4444444;
+   var ue_ReturnValue = 0;
+
+  function btn()
+  {
+  
+  ue.bindname.ue_fun(integerParam).then(function(ReturnValue){
+	
+	
+	alert("js: 调用UE 打印传入的参数"); 
+	var obj = document.getElementById("idd");
+	obj.value =ReturnValue;
+  <!-- alert("js: jsjsjsjssjsjs"); -->
+  });
+	
+   
+  }
+</script>
+
+
+<script>
+		function ueToJs()
+		{
+			alert("ue调用js  ")
+		}
+
+</script>
+
+
+
+ </body>
+</html>
